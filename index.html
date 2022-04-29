@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/75cc5f9feb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>Sohbet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login">
+            <span> Sohbete bağlanmak için isminizi giriniz:</span>
+            <input type="text" id="myName" placeholder="İsim Giriniz" autocomplete="off">
+            <button onclick="sohbeteBasla();"> <i class="far fa-comment"> Sohbete Başla</i></button>
+        </div>
+        <h2>Sohbet</h2>
+        <ul class="messages">
+            <li class="message">
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate pariatur odit, incidunt consequuntur ex possimus?
+                </p>
+                <span class="sender">Nisa</span>
+                <span class="date">12.00</span>
+            </li>
+
+            <li class="message mine">
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate pariatur odit, incidunt consequuntur ex possimus?
+                </p>
+                <span class="date">12.00</span>
+            </li>
+
+
+        </ul>
+
+        <div class="input">
+            <input type="text" id="myInput">
+            <button onclick="mesajGonder();"><i class="fa fa-paper-plane"></i></button>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
